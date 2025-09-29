@@ -17,6 +17,7 @@ body {
   color: white;
   text-decoration: none;
   transition: transform 0.4s ease, color 0.4s ease;
+  display: inline-block;
 }
 
 .logo h1:hover {
@@ -32,22 +33,31 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 40px;
+  padding: 5px 20px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.4);
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 30px;
+  gap: 10px;
   flex-wrap: wrap;
-  margin-right: 80px;
+  margin-right: 50px;
+}
+
+.nav-links li
+{
+  transition: transform 0.4s ease;
+}
+.nav-links li:hover
+{
+    transform: scale(1.2);
 }
 
 .nav-links li a {
   text-decoration: none;
   color: white;
-  transition: transform 0.4s ease, color 0.4s ease;
+  transition: color 0.4s ease;
   border: #101828 solid;
   border-color: rgba(255, 255, 255, 0.596);
   padding: 15px;
@@ -70,11 +80,11 @@ body {
 }
 
 .hero-text {
-  max-width: 600px;
+  max-width: 900px;
 }
 
 .hero-text h1 {
-  font-size: 2.5em;
+  font-size: 3.5em;
   font-weight: bold;
   text-shadow: 2px 2px 6px rgba(0,0,0,0.5); /* text-shadow */
 }
@@ -107,7 +117,7 @@ body {
 
 /* About Section */
 .about .card {
-  max-width: 600px;
+  max-width: 1000px;
   margin: 80px auto;
   padding: 20px;
   border-radius: 12px;
@@ -123,9 +133,23 @@ body {
     box-shadow: 0 0 25px rgba(138, 43, 226, 0.6);
 }
 
+
+.certificates
+{
+    max-width: 1000px;
+    margin: 80px auto;
+    padding: 20px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    text-align: center;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+
 .tech
 {
-    max-width: 600px;
+    max-width: 1000px;
     margin: 80px auto;
     padding: 20px;
     border-radius: 12px;
@@ -155,7 +179,7 @@ body {
 
 .journey
 {
-    max-width: 600px;
+    max-width: 1000px;
     margin: 80px auto;
     padding: 20px;
     border-radius: 12px;
@@ -169,7 +193,50 @@ body {
     transform: scale(1.1);
     box-shadow: 0 0 25px rgba(138, 43, 226, 0.6);
 }
+.contact
+{
+    max-width: 600px;
+    margin: 80px auto;
+    padding: 20px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    text-align: center;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.contact:hover
+{
+    transform: scale(1.1);
+    box-shadow: 0 0 25px rgba(138, 43, 226, 0.6);
+}
 
+.card form
+{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card form input, .card form textarea
+{
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    resize: vertical;
+}
+
+.card form button
+{
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: #3b82f6;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
 
 /* Footer */
 footer {
