@@ -2,15 +2,15 @@ body {
   background-color: #f2f7;
 }
  
-/* Example of text-shadow */
+
 h2 {
   text-shadow: 2px 2px 5px gray;
 }
  
-/* Example of color methods */
+
 footer {
   background-color: rgb(1000, 1000, 1000);
-  color: #ff865f; /* Hex color */
+  color: #ff865f; 
   text-align: center;
   padding: 10px;
 }
