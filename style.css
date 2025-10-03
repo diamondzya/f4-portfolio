@@ -5,9 +5,18 @@ html
 
 body
 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-decoration: solid;
+
 }
+
+h1 { font-family: 'Poppins', sans-serif; }
+p { font-family: 'Roboto', sans-serif; }
+code { font-family: 'Courier New', monospace; }
+
+h2
+{
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
 
 .row
 {
@@ -26,14 +35,7 @@ body
     box-shadow: 0 6px 18px rgba(0,0,0,0.5);
 }
 
-.container ul li a
+.text-decoration
 {
-
-}
-
-img
-{
-    border-radius: 50px;
-    height: auto;
-    width: 200px;
+    text-decoration: underline;
 }
