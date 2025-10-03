@@ -1,0 +1,39 @@
+html
+{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: solid;
+}
+
+.row
+{
+    
+    gap: 20px;
+    justify-content: center;
+}
+
+.container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 260px;           /* fixed card width */
+    flex: 0 0 260px;        /* don't grow/shrink below this */
+    box-shadow: 0 6px 18px rgba(0,0,0,0.5);
+}
+
+.container ul li a
+{
+
+}
+
+img
+{
+    border-radius: 50px;
+    height: auto;
+    width: 200px;
+}
