@@ -1,3 +1,8 @@
+#gulapa
+{
+    transform: rotate(-90deg);
+}
+
 html
 {
     scroll-behavior: smooth;
@@ -70,6 +75,37 @@ body
 .card:hover img
 {
     border: 3px solid rgb(66, 191, 233);
+}
+
+.social-icons
+{
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.icon
+{
+    width: 40px;
+    height: 40px;
+    border: 2px solid #3bc8c8;
+    border-radius: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: #3bc8c8;
+    font-size: 18px;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+
+.icon:hover
+{
+    color: white;
+    background-color: #3bc8c8;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(59, 200 , 200, 0.6);
 }
 
 footer
