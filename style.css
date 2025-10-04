@@ -5,37 +5,78 @@ html
 
 body
 {
-
+    background: linear-gradient(135deg, #1f1f1f, #3a3a3a);
+    color: white;
+    padding: 0;
+    margin: 0;
 }
 
-h1 { font-family: 'Poppins', sans-serif; }
-p { font-family: 'Roboto', sans-serif; }
-code { font-family: 'Courier New', monospace; }
-
-h2
+.hero
 {
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 60px 20px;
 }
 
-
-.row
+.title
 {
-    
-    gap: 20px;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 6px rgba(66, 191, 233, 0.4);
+}
+
+.intro 
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: lightgray;
+}
+
+.team-container
+{
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    gap: 30px;
+    margin: 50px auto;
 }
 
-.container {
-    background-color: white;
-    border-radius: 10px;
+.card  
+{
+    background: white;
+    color: black;
+    border-radius: 12px;
     padding: 20px;
     text-align: center;
-    width: 260px;           /* fixed card width */
-    flex: 0 0 260px;        /* don't grow/shrink below this */
-    box-shadow: 0 6px 18px rgba(0,0,0,0.5);
+    width: 220px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
 }
 
-.text-decoration
+.card:hover
 {
-    text-decoration: underline;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+}
+
+.card img
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    transition: border 0.3s;
+}
+
+.card:hover img
+{
+    border: 3px solid rgb(66, 191, 233);
+}
+
+footer
+{
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #111;
+    color: white;
 }
